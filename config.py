@@ -21,7 +21,7 @@ class Config(object):
     RKN_PIC = os.environ.get("RKN_PIC", "https://graph.org/file/9dc402f2ba612e3f6dfbf.jpg")
     ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '1654009706').split()]
     FORCE_SUB = os.environ.get("FORCE_SUB", "-1001413532435") 
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", None))
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1001720888155"))
 
     # wes response configuration     
     PORT = int(os.environ.get("PORT", "8080"))

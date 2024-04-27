@@ -9,18 +9,18 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID = os.environ.get("API_ID", "")
-    API_HASH = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
+    API_ID = os.environ.get("API_ID", "3566507")
+    API_HASH = os.environ.get("API_HASH", "194e4ba8b6787e11274f47ae63eb56ba")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "6141105459:AAG2QgssXPV2at540w1CextAZJIrSRH8Kq4") 
    
     # database config
     DB_NAME = os.environ.get("DB_NAME","Rkn_RenameBot")     
-    DB_URL = os.environ.get("DB_URL","")
+    DB_URL = os.environ.get("DB_URL","mongodb+srv://renamesfbot:renamesfbot@renamesfbot.vvjumza.mongodb.net/?retryWrites=true&w=majority")
  
     # other configs
     RKN_PIC = os.environ.get("RKN_PIC", "https://graph.org/file/9dc402f2ba612e3f6dfbf.jpg")
-    ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()]
-    FORCE_SUB = os.environ.get("FORCE_SUB", "-1001819787652") 
+    ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '1654009706').split()]
+    FORCE_SUB = os.environ.get("FORCE_SUB", "-1001413532435") 
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", None))
 
     # wes response configuration     
